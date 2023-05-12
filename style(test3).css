@@ -1,0 +1,859 @@
+                        /* http://meyerweb.com/eric/tools/css/reset/ 
+            v2.0 | 20110126
+            License: none (public domain)
+            */
+
+            html, body, div, span, applet, object, iframe,
+            h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+            a, abbr, acronym, address, big, cite, code,
+            del, dfn, em, img, ins, kbd, q, s, samp,
+            small, strike, strong, sub, /*sup*/tt, var,
+            b, u, i, center,
+            dl, dt, dd, ol, ul, li,
+            fieldset, form, label, legend,
+            table, caption, tbody, tfoot, thead, tr, th, td,
+            article, aside, canvas, details, embed, 
+            figure, figcaption, footer, header, hgroup, 
+            menu, nav, output, ruby, section, summary,
+            time, mark, audio, video {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
+            }
+            /* HTML5 display-role reset for older browsers */
+            article, aside, details, figcaption, figure, 
+            footer, header, hgroup, menu, nav, section {
+                display: block;
+            }
+            body {
+                line-height: 1;
+            }
+            ol, ul {
+                list-style: none;
+            }
+            blockquote, q {
+                quotes: none;
+            }
+            blockquote:before, blockquote:after,
+            q:before, q:after {
+                content: '';
+                content: none;
+            }
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+            /*------------ reset end-------------- */
+         #nav-top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 44px;
+         }
+         #nav-top > :first-child{
+            margin: 8px;
+         }
+         #nav-top-right{
+            display: flex;
+            justify-content: space-around;
+            height: 44px;
+         }
+         .top-right-item{
+            width: 48px;
+            height: 100%;
+         }
+         #nav-top-icon{
+            width: 30px;
+            height: 100%;
+         }
+         #nav-bottom{
+            padding: 0;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            text-align: center;
+            height: 100px;
+            width: 100%;
+            position: relative;
+         }
+         .nav-item{
+            display: flex;
+            padding-bottom: 50px;
+            margin: 0 auto;
+            overflow-x: auto;
+            overflow-y: hidden;
+            list-style: none;
+            white-space: nowrap;
+         }         
+         .nav-item-macbook-air{
+            height: 77px;
+            padding: 0px 20px 0px 4px;
+         }
+         .item-macbook-air{
+            width: 80px;
+            height: 54px;
+            background-image: url(https://www.apple.com/v/mac/home/bs/images/familybrowser/macbookair_light__f0o95rwae8ae_large.svg);
+            background-repeat: no-repeat;
+            padding-bottom: 4px;
+        }
+        .nav-item-macbook-air > :first-child > :last-child{
+            font-size: 12px;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+         }
+        .nav-item-macbook-pro{
+            height: 89px;
+            padding: 0px 20px 0px 20px;
+         }
+         .item-macbook-pro{
+            width: 84px;
+            height: 54px;
+            background-image: url(https://www.apple.com/v/mac/home/bs/images/familybrowser/macbook_pro_light__e791sjqzt32a_large.svg);
+            background-repeat: no-repeat;
+            padding-bottom: 4px;
+        }
+        .nav-item-macbook-pro > :first-child > :nth-child(2), :last-child{
+            font-size: 12px;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+         }
+         .nav-item-macbook-imac{
+            height: 77px;
+            padding: 0px 20px 0px 20px;
+         }
+         .item-macbook-imac{
+            width: 43px;
+            height: 54px;
+            background-image: url(https://www.apple.com/v/mac/home/bs/images/familybrowser/imac_24_light__colyztscbeeu_large.svg);
+            background-repeat: no-repeat;
+            padding-bottom: 4px;
+        }
+        .nav-item-macbook-imac > :first-child > :nth-child(2), :last-child{
+            font-size: 12px;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+         }
+        .nav-item ~ span{
+            text-decoration: none;
+         }
+
+        #section-1{
+            width: 100%;
+            background-color: black;
+            padding: 78px 0px 75px 0px;
+            border-bottom: 10px solid #f5f5f7;
+        }
+        #section-1-tilte{
+            text-align: center;
+            font-size: 40px;
+            font-weight: 600;
+            color: #fff;
+            margin: 0px 0px 31px 0px;
+            /* margin: 0 auto; */
+         }
+         #section-1-button{
+            width: auto;
+            height: auto;
+         }
+         .section-1-link{
+            padding: 8px 16px;
+            border-radius: 50px;
+            background: #f5f5f7;
+            color: #000;
+            cursor: pointer;
+            text-align: center;
+            font-size: 15px;
+            line-height: 1.17648;
+            font-weight: 500;
+            border: 1px #000;
+            position: relative;
+         }
+         .section-1-icon{
+            padding: 0px 0px 0px 5px;
+            position: relative;
+            top: 3px;
+         }
+         #section-2{
+            width: 100%;
+            background-color: black;
+            padding-top: 73px;
+            border-bottom: 10px solid #f5f5f7;
+            position: relative;
+         }
+         #section-2-tilte > :first-child{
+            font-size: 17px;
+            font-weight: 600;
+            background: rgba(0,0,0,0);
+            border-color: #bf4800;
+            color: #f56300;
+         }
+         #section-2-tilte > :last-child{
+            color: #fff;
+            text-align: center;
+            font-size: 40px;
+            font-weight: 600;
+         }
+         .section-2-text{
+            text-align: center;
+            font-weight: 600;
+            font-size: 20px;
+            color: #fff;
+            line-height: 1.5;
+         }
+         #section-2-text > :last-child{
+            text-align: center;
+            font-weight: 400;
+            font-size: 17px;
+            color: #fff;
+            line-height: 1.5;
+         }
+         #section-2-link{
+            margin-top: 15px;
+         }
+         .section-2-link{
+            padding: 8px 16px;
+            border-radius: 50px;
+            background: #0071e3;
+            color: #fff;
+            cursor: pointer;
+            text-align: center;
+            font-size: 17px;
+            line-height: 1.17648;
+            font-weight: 500;
+            border: 1px #000;
+            position: relative;
+         }
+         #section-2-link > :last-child > :first-child{
+            color: #2997ff;
+            font-size: 15px;
+            font-weight: 400;
+            margin-left: 15px;
+         }
+         #section-2-img{
+            width: auto;
+            padding-top: 50%;
+            margin-top: 80px;
+            background-image: url(https://www.apple.com/v/mac/home/bs/images/overview/hero/macbook_pro_14_16__dmqm5vr9l7yq_medium_2x.jpg);
+            background-repeat: no-repeat;
+            background-size: 80vw;
+            background-position: center;
+         }
+         #section-3{
+            width: 100%;
+            background-color: black;
+            padding-top: 73px;
+            border-bottom: 10px solid #f5f5f7;
+            position: relative;
+         }
+         #section-3-tilte > :first-child{
+            font-size: 17px;
+            font-weight: 600;
+            background: rgba(0,0,0,0);
+            border-color: #bf4800;
+            color: #f56300;
+         }
+         #section-3-tilte > :last-child{
+            color: #fff;
+            text-align: center;
+            font-size: 40px;
+            font-weight: 600;
+         }
+         .section-3-text{
+            text-align: center;
+            font-weight: 600;
+            font-size: 20px;
+            color: #fff;
+            line-height: 1.5;
+         }
+         #section-3-text > :last-child{
+            text-align: center;
+            font-weight: 400;
+            font-size: 17px;
+            color: #fff;
+            line-height: 1.5;
+         }
+         #section-3-link{
+            margin-top: 15px;
+         }
+         .section-3-link{
+            padding: 8px 16px;
+            border-radius: 50px;
+            background: #0071e3;
+            color: #fff;
+            cursor: pointer;
+            text-align: center;
+            font-size: 17px;
+            line-height: 1.17648;
+            font-weight: 500;
+            border: 1px #000;
+            position: relative;
+         }
+         #section-3-link > :last-child > :first-child{
+            color: #2997ff;
+            font-size: 15px;
+            font-weight: 400;
+            margin-left: 15px;
+         }
+         #section-3-img{
+            width: auto;
+            padding-top: 50%;
+            background-image: url(https://www.apple.com/v/mac/home/bs/images/overview/hero/mac_mini__d3310qb7lt6q_large_2x.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+         }
+         #info-box{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+         }
+         #item-info{
+            padding-top: 84px;
+            width: 100%;
+            margin: 0 auto;
+         }
+         #item-info-tap > :first-child{
+            align-content: center;
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 50px;
+         }
+         .info-tap{
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin: 0 auto;
+         }
+         .info-tap > :first-child{
+            line-height: 1.2;
+            border-bottom: 2px solid #000;
+         }
+         .info-tap > :last-child{
+            line-height: 1.2;
+            border-bottom: 1px solid #e6e6e6;
+         }
+         .air-img{
+            margin-top: 50px;
+         }
+         .air-val{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin: 20px 0px;
+         }
+         .air-val > :first-child{
+            font-size: 17px;
+            font-weight: 600;
+         }
+         .air-val > :nth-child(2){
+            font-size: 15px;
+            font-weight: 500;
+         }
+         .air-val > :last-child{
+            font-size: 15px;
+            font-weight: 500;
+         }
+         .air-button{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-top: 20px;
+            padding-bottom: 50px;
+            border-bottom: 1px solid #e6e6e6;
+            margin: 0px 50px
+         }
+         .air-button-link{
+            padding: 4px 11px;
+            border-radius: 50px;
+            background: #0071e3;
+            color: #fff;
+            cursor: pointer;
+            text-align: center;
+            font-size: 12px;
+            line-height: 1.17648;
+            font-weight: 500;
+            border: 1px #000;
+            position: relative;
+         }
+         .air-button > :last-child{
+            color: #2997ff;
+            font-size: 13px;
+            font-weight: 400;
+         }
+         .air-dis{
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            margin-top: 50px;
+         }
+         .air-dis > :first-child{
+            font-size: 17px;
+            font-weight: 600;
+         }
+         .air-dis > :nth-child(2), :nth-child(3){
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.2;
+         }
+         .air-chip{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 20px;
+         }
+         .air-chip > :first-child{
+            width: 48px;
+            height: 44px;
+            margin: 0 auto;
+            background-image: url(https://www.apple.com/v/mac/home/bs/images/overview/compare/compare_icon_m1__dsskrswqk7wy_large_2x.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+         }
+         .air-chip > :last-child{
+            font-size: 14px;
+            font-weight: 400;
+         }
+         .air-cpu{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 20px;
+         }
+         .air-cpu > :first-child{
+            font-size: 17px;
+            font-weight: 600;
+         }
+         .air-cpu > :last-child{
+            font-size: 14px;
+            font-weight: 400;
+         }
+         .air-gpu{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 40px;
+         }
+         .air-gpu > :first-child{
+            font-size: 17px;
+            font-weight: 600;
+         }
+         .air-gpu > :last-child{
+            font-size: 14px;
+            font-weight: 400;
+         }
+         .air-gb{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 20px;
+         }
+         .air-gb > :first-child{
+            width: 48px;
+            height: 44px;
+            margin: 0 auto;
+            background-image: url(https://www.apple.com/v/mac/home/bs/images/overview/compare/compare_icon_unified_memory__emykppauav2a_large_2x.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+         }
+         .air-gb > :nth-child(2){
+            font-size: 14px;
+            font-weight: 400;
+         }
+         .air-gb > :last-child{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.1;
+         }
+         .air-tb{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 20px;
+         }
+         .air-tb > :first-child{
+            font-size: 17px;
+            font-weight: 600;
+            padding-bottom: 6px;
+         }
+         .air-tb > :nth-child(2), :last-child{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.1;
+         }
+         .air-battery{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 20px;
+         }
+         .air-battery > :first-child{
+            width: 48px;
+            height: 44px;
+            margin: 0 auto;
+            background-image: url(https://www.apple.com/v/mac/home/bs/images/overview/compare/compare_icon_battery__fk0ughiyc3am_large_2x.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+         }
+         .air-battery > :nth-child(2){
+            font-size: 14px;
+            font-weight: 400;
+         }
+         .air-battery > :last-child{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.1;
+         }
+         .air-camera{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 20px;
+         }
+         .air-camera > :first-child{
+            width: 48px;
+            height: 44px;
+            margin: 0 auto;
+            background-image: url(https://www.apple.com/v/mac/home/bs/images/overview/compare/compare_icon_camera__dlxow9r3leie_large_2x.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-size: 90%;
+         }
+         .air-camera > :nth-child(2), :nth-child(3) :last-child{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.1;
+         }
+         .air-speaker{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 20px;
+         }
+         .air-speaker > :first-child{
+            width: 48px;
+            height: 44px;
+            margin: 0 auto;
+            background-image: url(https://www.apple.com/v/mac/home/bs/images/overview/compare/compare_icon_mic__bkm7awuvc5qu_large_2x.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+         }
+         .air-speaker > span{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.1;
+         }
+         .air-kg{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 45.3px;
+            padding-bottom: 30px;
+         }
+         .air-kg > :first-child{
+            font-size: 17px;
+            font-weight: 600;
+         }
+         .air-kg > :last-child{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.1;
+         }
+         .air-id{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 20px;
+            padding-bottom: 50px;
+            border-bottom: 1px solid #e6e6e6;
+            margin: 0px 50px
+         }
+         .air-id > :first-child{
+            width: 48px;
+            height: 44px;
+            margin: 0 auto;
+            background-image: url(https://www.apple.com/v/mac/home/bs/images/overview/compare/compare_icon_touch_id_touch_bar__e6rwp5pfboae_large_2x.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+         }
+         .air-id > span{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.1;
+         }
+         /* m2칩 */
+         .air-m2-img{
+            margin-top: 50px;
+         }
+         .air-m2-val{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin: 20px 0px;
+         }
+         .air-m2-val > :first-child{
+            font-size: 17px;
+            font-weight: 600;
+         }
+         .air-m2-val > :nth-child(2){
+            font-size: 15px;
+            font-weight: 500;
+         }
+         .air-m2-val > :last-child{
+            font-size: 15px;
+            font-weight: 500;
+         }
+         .air-m2-button{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-top: 20px;
+            padding-bottom: 50px;
+            border-bottom: 1px solid #e6e6e6;
+            margin: 0px 50px
+         }
+         .air-m2-button-link{
+            padding: 4px 11px;
+            border-radius: 50px;
+            background: #0071e3;
+            color: #fff;
+            cursor: pointer;
+            text-align: center;
+            font-size: 12px;
+            line-height: 1.17648;
+            font-weight: 500;
+            border: 1px #000;
+            position: relative;
+         }
+         .air-m2-button > :last-child{
+            color: #2997ff;
+            font-size: 13px;
+            font-weight: 400;
+         }
+         .air-m2-dis{
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            margin-top: 45px;
+         }
+         .air-m2-dis > :first-child{
+            font-size: 17px;
+            font-weight: 600;
+         }
+         .air-m2-dis > :nth-child(2), :nth-child(3){
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 12px;
+         }
+         .air-m2-chip{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 23px;
+         }
+         .air-m2-chip > :first-child{
+            width: 48px;
+            height: 44px;
+            margin: 0 auto;
+            background-image: url(https://www.apple.com/v/mac/home/bs/images/overview/compare/compare_icon_m2__c5vv0ufcdyc2_large_2x.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+         }
+         .air-m2-chip > :last-child{
+            font-size: 14px;
+            font-weight: 400;
+         }
+         .air-m2-cpu{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 20px;
+         }
+         .air-m2-cpu > :first-child{
+            font-size: 17px;
+            font-weight: 600;
+         }
+         .air-m2-cpu > :last-child{
+            font-size: 14px;
+            font-weight: 400;
+         }
+         .air-m2-gpu{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 27px;
+         }
+         .air-m2-gpu > :nth-child(2){
+            font-size: 17px;
+            font-weight: 600;
+         }
+         .air-m2-gpu > :first-child, :last-child{
+            font-size: 12px;
+            font-weight: 400;
+         }
+         .air-m2-gb{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 20px;
+         }
+         .air-m2-gb > :first-child{
+            width: 48px;
+            height: 44px;
+            margin: 0 auto;
+            background-image: url(https://www.apple.com/v/mac/home/bs/images/overview/compare/compare_icon_unified_memory__emykppauav2a_large_2x.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+         }
+         .air-m2-gb > :nth-child(2){
+            font-size: 14px;
+            font-weight: 400;
+         }
+         .air-m2-gb > :last-child{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.1;
+         }
+         .air-m2-tb{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 20px;
+         }
+         .air-m2-tb > :first-child{
+            font-size: 17px;
+            font-weight: 600;
+            padding-bottom: 6px;
+         }
+         .air-m2-tb > :nth-child(2), :last-child{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.1;
+         }
+         .air-m2-battery{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 20px;
+         }
+         .air-m2-battery > :first-child{
+            width: 48px;
+            height: 44px;
+            margin: 0 auto;
+            background-image: url(https://www.apple.com/v/mac/home/bs/images/overview/compare/compare_icon_battery__fk0ughiyc3am_large_2x.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+         }
+         .air-m2-battery > :nth-child(2){
+            font-size: 14px;
+            font-weight: 400;
+         }
+         .air-m2-battery > :last-child{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.1;
+         }
+         .air-m2-camera{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 20px;
+         }
+         .air-m2-camera > :first-child{
+            width: 48px;
+            height: 44px;
+            margin: 0 auto;
+            background-image: url(https://www.apple.com/v/mac/home/bs/images/overview/compare/compare_icon_camera__dlxow9r3leie_large_2x.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-size: 90%;
+         }
+         .air-m2-camera > :nth-child(2), :nth-child(3) :last-child{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.1;
+         }
+         .air-m2-speaker{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 20px;
+         }
+         .air-m2-speaker > :first-child{
+            width: 48px;
+            height: 44px;
+            margin: 0 auto;
+            background-image: url(https://www.apple.com/v/mac/home/bs/images/overview/compare/compare_icon_mic__bkm7awuvc5qu_large_2x.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+         }
+         .air-m2-speaker > span{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.1;
+         }
+         .air-m2-kg{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+         }
+         .air-m2-kg > :first-child{
+            font-size: 17px;
+            font-weight: 600;
+         }
+         .air-m2-kg > :last-child{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.1;
+         }
+         .air-m2-id{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 20px;
+            padding-bottom: 50px;
+            border-bottom: 1px solid #e6e6e6;
+            margin: 0px 50px
+         }
+         .air-m2-id > :first-child{
+            width: 48px;
+            height: 44px;
+            margin: 0 auto;
+            background-image: url(https://www.apple.com/v/mac/home/bs/images/overview/compare/compare_icon_touch_id_touch_bar__e6rwp5pfboae_large_2x.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+         }
+         .air-m2-id > span{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.1;
+         }
+
+@media (min-width:767px){
+   #info-box{
+      grid-template-columns: 1fr 1fr;
+   }
+}
+@media (min-width:1280px){
+   #info-box{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+   }
+}
+.
